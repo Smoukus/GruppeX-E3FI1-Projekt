@@ -31,7 +31,7 @@ class Systemintegrator:
         self.__firma = firma
 
     def __str__(self) -> str:
-        return f'Name: {self.__name}, Alter: {self.__alter}, Jahre Erfahrung: {self.__jahreErfahrung}, Firma: {self.__firma}'
+        return f"Name: {self.__name}, Alter: {self.__alter}, Jahre Erfahrung: {self.__jahreErfahrung}, Firma: {self.__firma}"
 
 # Testen der Klasse
 systemintegratoren = []
