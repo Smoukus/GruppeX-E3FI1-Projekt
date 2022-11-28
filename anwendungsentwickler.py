@@ -35,3 +35,6 @@ class Anwendungsentwickler:
 
     def setFirma(self, firma):
         self.__firma = firma
+
+    def __str__(self) -> str:
+        return f"Name: {self.__name}, Alter: {self.__alter}, Lieblingssprache: {self.__lieblingsSprache}, Jahre Erfahrung: {self.__jahreErfahrung}, Firma: {self.__firma}"
