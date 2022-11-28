@@ -1,9 +1,10 @@
 class Anwendungsentwickler:
-    def __init__(self, name, alter, lieblingsSprache, jahreErfahrung):
+    def __init__(self, name, alter, lieblingsSprache, jahreErfahrung, firma):
         self.__name = name
         self.__alter = alter
         self.__lieblingsSprache = lieblingsSprache
         self.__jahreErfahrung = jahreErfahrung
+        self.__firma = firma
 
     def getName(self):
         return self.__name
@@ -28,3 +29,9 @@ class Anwendungsentwickler:
 
     def setJahreErfahrung(self, jahreErfahrung):
         self.__jahreErfahrung = jahreErfahrung
+
+    def getFirma(self):
+        return self.__firma
+
+    def setFirma(self, firma):
+        self.__firma = firma
