@@ -31,4 +31,17 @@ class Systemintegrator:
         self.__firma = firma
 
     def __str__(self) -> str:
-        return f"Name: {self.__name}, Alter: {self.__alter}, Jahre Erfahrung: {self.__jahreErfahrung}, Firma: {self.__firma}"
+        return f'Name: {self.__name}, Alter: {self.__alter}, Jahre Erfahrung: {self.__jahreErfahrung}, Firma: {self.__firma}'
+
+# Testen der Klasse
+systemintegratoren = []
+sys1 = Systemintegrator('Domagoj Smolcic', 25, 3, 'Bürstner')
+sys2 = Systemintegrator('Hans Wolf', 29, 7, 'Kochler')
+sys3 = Systemintegrator('Stefan Kupi', 50, 25, 'Telekom')
+
+systemintegratoren.append(sys1)
+systemintegratoren.append(sys2)
+systemintegratoren.append(sys3)
+
+for systemintegrator in systemintegratoren:
+    print(systemintegrator)
